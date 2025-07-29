@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <h1>Learn X</h1>
+  </div>
+
+  <ul class="nav-links">
+    <li class="dropdown">
+    <a href="#all-notes">Notes <i class="fas fa-caret-down"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="#handwritten-notes">Handwritten Notes</a></li>
+        <li><a href="#topper-notes">Topper Notes</a></li>
+        <li><a href="#chapterwise-notes">Chapter-wise Notes</a></li>
+        <li><a href="#important-notes">Important Notes</a></li>
+    </ul>
+</li>
+
+
+ 
+    <li><a href="#pyqs">PYQs</a></li>
+    <li><a href="sample-papers.html">Sample Papers</a></li>
+    <li><a href="sample-papers.html">Experiments</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+<div class="search">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button type="button" onclick="searchContent()">Search</button>
+</div>
+
+</nav>
+
+ 
+
+
+    <header class="hero">
+        <h1>Welcome to Learn X</h1>
+        <p>Your one-stop solution for learning.</p>
+        <button class="explore-btn" onclick="document.getElementById('all-notes').scrollIntoView({ behavior: 'smooth' });">
+  Explore Now
+</button>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Courses</h2>
+            <p>Explore a wide range of courses tailored to your learning needs.</p>
+        </div>
+        <div class="feature">
+            <h2>Notes</h2>
+            <p>Access comprehensive notes for better understanding.</p>
+        </div>
+        <div class="feature">
+            <h2>NCERT Solutions</h2>
+            <p>Get detailed solutions to NCERT textbooks.</p>
+        </div>
+        <div class="feature">
+            <h2>CBSE</h2>
+            <p>Find resources and guidance for CBSE curriculum.</p>
+        </div>
+    </section>
+
+
+<section class="notes-section" id="all-notes">
+    <h2>All Notes</h2>
+    <div class="notes-container">
+  <div class="note-card">
+  <h3>Physics</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list" style="display: none;">
+        <h4>Class 12</h4>
+        <ul>
+           <li>
+    <span onclick="openPDF('cs_python_revision.pdf')">Electrostatics</span>
+    <a href="pdfs/physics/electrostatics.pdf" download title="Download">
+      <i class="fa fa-download"></i>
+    </a>
+  </li>
+            <li>
+    <span onclick="openPDF('pdfs/physics/current-electricity.pdf')">Current Electricity</span>
+    <a href="pdfs/physics/current-electricity.pdf" download title="Download">
+      <i class="fa fa-download"></i>
+    </a>
+  </li>
+
+          <li>
+    <span onclick="openPDF('pdfs/physics/magnetism.pdf')">Magnetism & Matter</span>
+    <a href="pdfs/physics/magnetism.pdf" download title="Download">
+      <i class="fa fa-download"></i>
+    </a>
+  </li>
+          <li>
+  <span onclick="openPDF('pdfs/physics/em-induction.pdf')">Electromagnetic Induction</span>
+  <a href="pdfs/physics/em-induction.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/physics/ac.pdf')">Alternating Current</span>
+  <a href="pdfs/physics/ac.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/physics/em-waves.pdf')">Electromagnetic Waves</span>
+  <a href="pdfs/physics/em-waves.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/physics/optics.pdf')">Ray & Wave Optics</span>
+  <a href="pdfs/physics/optics.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/physics/modern-physics.pdf')">Modern Physics</span>
+  <a href="pdfs/physics/modern-physics.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+        </ul>
+  </div>
+</div>
+
+   <div class="note-card">
+  <h3>Chemistry</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12</h4>
+    <ul>
+      <li>
+  <span onclick="openPDF('pdfs/chemistry/solid-state.pdf')">Solid State</span>
+  <a href="pdfs/chemistry/solid-state.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/solutions.pdf')">Solutions</span>
+  <a href="pdfs/chemistry/solutions.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/electrochemistry.pdf')">Electrochemistry</span>
+  <a href="pdfs/chemistry/electrochemistry.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/chemical-kinetics.pdf')">Chemical Kinetics</span>
+  <a href="pdfs/chemistry/chemical-kinetics.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/surface-chemistry.pdf')">Surface Chemistry</span>
+  <a href="pdfs/chemistry/surface-chemistry.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/metallurgy.pdf')">General Principles of Metallurgy</span>
+  <a href="pdfs/chemistry/metallurgy.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/p-block.pdf')">p-Block Elements</span>
+  <a href="pdfs/chemistry/p-block.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/d-f-block.pdf')">d- and f-Block Elements</span>
+  <a href="pdfs/chemistry/d-f-block.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/coordination-compounds.pdf')">Coordination Compounds</span>
+  <a href="pdfs/chemistry/coordination-compounds.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/haloalkanes-haloarenes.pdf')">Haloalkanes & Haloarenes</span>
+  <a href="pdfs/chemistry/haloalkanes-haloarenes.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/alcohols-phenols-ethers.pdf')">Alcohols, Phenols & Ethers</span>
+  <a href="pdfs/chemistry/alcohols-phenols-ethers.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/aldehydes-ketones-carboxylic-acids.pdf')">Aldehydes, Ketones & Carboxylic Acids</span>
+  <a href="pdfs/chemistry/aldehydes-ketones-carboxylic-acids.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/amines.pdf')">Amines</span>
+  <a href="pdfs/chemistry/amines.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/biomolecules.pdf')">Biomolecules</span>
+  <a href="pdfs/chemistry/biomolecules.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/polymers.pdf')">Polymers</span>
+  <a href="pdfs/chemistry/polymers.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/chemistry/chemistry-everyday-life.pdf')">Chemistry in Everyday Life</span>
+  <a href="pdfs/chemistry/chemistry-everyday-life.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+    <div class="note-card">
+  <h3>Mathematics</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12</h4>
+    <ul>
+<li>
+  <span onclick="openPDF('pdfs/maths/relations-functions.pdf')">Relations and Functions</span>
+  <a href="pdfs/maths/relations-functions.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/inverse-trigonometric-functions.pdf')">Inverse Trigonometric Functions</span>
+  <a href="pdfs/maths/inverse-trigonometric-functions.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/matrices.pdf')">Matrices</span>
+  <a href="pdfs/maths/matrices.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/determinants.pdf')">Determinants</span>
+  <a href="pdfs/maths/determinants.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/continuity-differentiability.pdf')">Continuity and Differentiability</span>
+  <a href="pdfs/maths/continuity-differentiability.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/applications-derivatives.pdf')">Applications of Derivatives</span>
+  <a href="pdfs/maths/applications-derivatives.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/integrals.pdf')">Integrals</span>
+  <a href="pdfs/maths/integrals.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/applications-integrals.pdf')">Applications of Integrals</span>
+  <a href="pdfs/maths/applications-integrals.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/differential-equations.pdf')">Differential Equations</span>
+  <a href="pdfs/maths/differential-equations.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/vector-algebra.pdf')">Vector Algebra</span>
+  <a href="pdfs/maths/vector-algebra.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/3d-geometry.pdf')">Three-Dimensional Geometry</span>
+  <a href="pdfs/maths/3d-geometry.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/linear-programming.pdf')">Linear Programming</span>
+  <a href="pdfs/maths/linear-programming.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/maths/probability.pdf')">Probability</span>
+  <a href="pdfs/maths/probability.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+         <div class="note-card">
+  <h3>Biology</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12</h4>
+    <ul>
+      <li>
+  <span onclick="openPDF('pdfs/biology/reproduction-in-organisms.pdf')">Reproduction in Organisms</span>
+  <a href="pdfs/biology/reproduction-in-organisms.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/sexual-reproduction-flowering-plants.pdf')">Sexual Reproduction in Flowering Plants</span>
+  <a href="pdfs/biology/sexual-reproduction-flowering-plants.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/human-reproduction.pdf')">Human Reproduction</span>
+  <a href="pdfs/biology/human-reproduction.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/reproductive-health.pdf')">Reproductive Health</span>
+  <a href="pdfs/biology/reproductive-health.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/principles-inheritance-variation.pdf')">Principles of Inheritance & Variation</span>
+  <a href="pdfs/biology/principles-inheritance-variation.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/molecular-basis-inheritance.pdf')">Molecular Basis of Inheritance</span>
+  <a href="pdfs/biology/molecular-basis-inheritance.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/evolution.pdf')">Evolution</span>
+  <a href="pdfs/biology/evolution.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/human-health-disease.pdf')">Human Health & Disease</span>
+  <a href="pdfs/biology/human-health-disease.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/food-production-enhancement.pdf')">Strategies for Enhancement in Food Production</span>
+  <a href="pdfs/biology/food-production-enhancement.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/microbes-human-welfare.pdf')">Microbes in Human Welfare</span>
+  <a href="pdfs/biology/microbes-human-welfare.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/biotechnology-principles-processes.pdf')">Biotechnology: Principles & Processes</span>
+  <a href="pdfs/biology/biotechnology-principles-processes.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/biotechnology-applications.pdf')">Biotechnology & Its Applications</span>
+  <a href="pdfs/biology/biotechnology-applications.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/organisms-populations.pdf')">Organisms & Populations</span>
+  <a href="pdfs/biology/organisms-populations.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/ecosystem.pdf')">Ecosystem</span>
+  <a href="pdfs/biology/ecosystem.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/biodiversity-conservation.pdf')">Biodiversity & Conservation</span>
+  <a href="pdfs/biology/biodiversity-conservation.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/biology/environmental-issues.pdf')">Environmental Issues</span>
+  <a href="pdfs/biology/environmental-issues.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+      <div class="note-card">
+  <h3>Physical Education</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12</h4>
+    <ul>
+     <li>
+  <span onclick="openPDF('pdfs/pe/planning-in-sports.pdf')">Planning in Sports</span>
+  <a href="pdfs/pe/planning-in-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/sports-and-nutrition.pdf')">Sports and Nutrition</span>
+  <a href="pdfs/pe/sports-and-nutrition.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/yoga-and-lifestyle.pdf')">Yoga and Lifestyle</span>
+  <a href="pdfs/pe/yoga-and-lifestyle.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/physical-education-for-cwsn.pdf')">Physical Education for CWSN</span>
+  <a href="pdfs/pe/physical-education-for-cwsn.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/children-and-women-in-sports.pdf')">Children and Women in Sports</span>
+  <a href="pdfs/pe/children-and-women-in-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/test-and-measurement-in-sports.pdf')">Test and Measurement in Sports</span>
+  <a href="pdfs/pe/test-and-measurement-in-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/physiology-and-injuries-in-sports.pdf')">Physiology and Injuries in Sports</span>
+  <a href="pdfs/pe/physiology-and-injuries-in-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/biomechanics-and-sports.pdf')">Biomechanics and Sports</span>
+  <a href="pdfs/pe/biomechanics-and-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/psychology-and-sports.pdf')">Psychology and Sports</span>
+  <a href="pdfs/pe/psychology-and-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/training-in-sports.pdf')">Training in Sports</span>
+  <a href="pdfs/pe/training-in-sports.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/doping.pdf')">Doping</span>
+  <a href="pdfs/pe/doping.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/pe/sports-medicine.pdf')">Sports Medicine</span>
+  <a href="pdfs/pe/sports-medicine.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+       <div class="note-card">
+  <h3>Hindi</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12 (आरोह)</h4>
+    <ul>
+      <li>
+  <span onclick="openPDF('pdfs/hindi/harivansh-rai-bachchan-atmparichay.pdf')">हरिवंश राय बच्चन - आत्मपरिचय</span>
+  <a href="pdfs/hindi/harivansh-rai-bachchan-atmparichay.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/alok-dhanva-patang.pdf')">आलोक धन्वा - पतंग</span>
+  <a href="pdfs/hindi/alok-dhanva-patang.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/kunwar-narayan-kavita-ke-bahane.pdf')">कुँवर नारायण - कविता के बहाने</span>
+  <a href="pdfs/hindi/kunwar-narayan-kavita-ke-bahane.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/raghuvir-sahay-camera-mein-band-apahaj.pdf')">रघुवीर सहाय - कैमरे में बंद अपाहज</span>
+  <a href="pdfs/hindi/raghuvir-sahay-camera-mein-band-apahaj.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/gajanan-madhur-muktibodh-saharsh-svikara-hai.pdf')">गजानन माधव मुक्तिबोध - सहर्ष स्वीकारा है</span>
+  <a href="pdfs/hindi/gajanan-madhur-muktibodh-saharsh-svikara-hai.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/shamsher-bahadur-singh-usha.pdf')">शमशेर बहादुर सिंह - उषा</span>
+  <a href="pdfs/hindi/shamsher-bahadur-singh-usha.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/suryakant-tripathi-nirala-badal-raag.pdf')">सूर्यकांत त्रिपाठी निराला - बादल राग</span>
+  <a href="pdfs/hindi/suryakant-tripathi-nirala-badal-raag.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/tulsidas-kavitavali.pdf')">तुलसीदास - कवितावली</span>
+  <a href="pdfs/hindi/tulsidas-kavitavali.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/firaq-gorakhpuri-rubaiyan.pdf')">फ़िराक गोरखपुरी - रुबाइयाँ</span>
+  <a href="pdfs/hindi/firaq-gorakhpuri-rubaiyan.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/mahadevi-verma-chhota-mera-khel.pdf')">महादेवी वर्मा - छोटा मेरा खेल</span>
+  <a href="pdfs/hindi/mahadevi-verma-chhota-mera-khel.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+    <h4>Class 12 (वितान)</h4>
+    <ul>
+     <li>
+  <span onclick="openPDF('pdfs/hindi/jaishankar-prasad-silver-wedding.pdf')">जयशंकर प्रसाद - सिल्वर वैडिंग</span>
+  <a href="pdfs/hindi/jaishankar-prasad-silver-wedding.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/srinjay-jooth.pdf')">सृंजय - जूझ</span>
+  <a href="pdfs/hindi/srinjay-jooth.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/amarkant-o-sadanira.pdf')">अमरकांत - ओ सदानीरा</span>
+  <a href="pdfs/hindi/amarkant-o-sadanira.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/omprakash-valmiki-diary-ke-panne.pdf')">ओमप्रकाश वाल्मीकि - डायरी के पन्ने</span>
+  <a href="pdfs/hindi/omprakash-valmiki-diary-ke-panne.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+    <h4>लेखन अभ्यास</h4>
+    <ul>
+     <li>
+  <span onclick="openPDF('pdfs/hindi/apathit-gadyansh.pdf')">अपठित गद्यांश</span>
+  <a href="pdfs/hindi/apathit-gadyansh.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/nibandh-lekhan.pdf')">निबंध लेखन</span>
+  <a href="pdfs/hindi/nibandh-lekhan.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/patra-lekhan.pdf')">पत्र लेखन</span>
+  <a href="pdfs/hindi/patra-lekhan.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/vigyapan-lekhan.pdf')">विज्ञापन लेखन</span>
+  <a href="pdfs/hindi/vigyapan-lekhan.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/hindi/sakshatkar.pdf')">साक्षात्कार</span>
+  <a href="pdfs/hindi/sakshatkar.pdf" download title="डाउनलोड करें">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+       <div class="note-card">
+  <h3>English</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Flamingo (Prose)</h4>
+    <ul>
+      <li>
+  <span onclick="openPDF('pdfs/english/the-last-lesson.pdf')">The Last Lesson</span>
+  <a href="pdfs/english/the-last-lesson.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/lost-spring.pdf')">Lost Spring</span>
+  <a href="pdfs/english/lost-spring.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/deep-water.pdf')">Deep Water</span>
+  <a href="pdfs/english/deep-water.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/the-rattrap.pdf')">The Rattrap</span>
+  <a href="pdfs/english/the-rattrap.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/indigo.pdf')">Indigo</span>
+  <a href="pdfs/english/indigo.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/poets-and-pancakes.pdf')">Poets and Pancakes</span>
+  <a href="pdfs/english/poets-and-pancakes.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/the-interview.pdf')">The Interview</span>
+  <a href="pdfs/english/the-interview.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/going-places.pdf')">Going Places</span>
+  <a href="pdfs/english/going-places.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+    <h4>Flamingo (Poetry)</h4>
+    <ul>
+      <li>
+  <span onclick="openPDF('pdfs/english/my-mother-at-sixty-six.pdf')">My Mother at Sixty-Six</span>
+  <a href="pdfs/english/my-mother-at-sixty-six.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/an-elementary-school-classroom.pdf')">An Elementary School Classroom</span>
+  <a href="pdfs/english/an-elementary-school-classroom.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/keeping-quiet.pdf')">Keeping Quiet</span>
+  <a href="pdfs/english/keeping-quiet.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/a-thing-of-beauty.pdf')">A Thing of Beauty</span>
+  <a href="pdfs/english/a-thing-of-beauty.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/a-roadside-stand.pdf')">A Roadside Stand</span>
+  <a href="pdfs/english/a-roadside-stand.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/aunt-jennifers-tigers.pdf')">Aunt Jennifer's Tigers</span>
+  <a href="pdfs/english/aunt-jennifers-tigers.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+    <h4>Vistas (Supplementary)</h4>
+    <ul>
+     <li>
+  <span onclick="openPDF('pdfs/english/the-third-level.pdf')">The Third Level</span>
+  <a href="pdfs/english/the-third-level.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/the-tiger-king.pdf')">The Tiger King</span>
+  <a href="pdfs/english/the-tiger-king.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/journey-to-the-end-of-the-earth.pdf')">Journey to the End of the Earth</span>
+  <a href="pdfs/english/journey-to-the-end-of-the-earth.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/the-enemy.pdf')">The Enemy</span>
+  <a href="pdfs/english/the-enemy.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/should-wizard-hit-mommy.pdf')">Should Wizard Hit Mommy?</span>
+  <a href="pdfs/english/should-wizard-hit-mommy.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/on-the-face-of-it.pdf')">On the Face of It</span>
+  <a href="pdfs/english/on-the-face-of-it.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/evans-tries-an-o-level.pdf')">Evans Tries an O-level</span>
+  <a href="pdfs/english/evans-tries-an-o-level.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/memories-of-childhood.pdf')">Memories of Childhood</span>
+  <a href="pdfs/english/memories-of-childhood.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+    <h4>Writing Skills</h4>
+    <ul>
+     <li>
+  <span onclick="openPDF('pdfs/english/writing-notice-advertisement.pdf')">Notice/Advertisement</span>
+  <a href="pdfs/english/writing-notice-advertisement.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/writing-letter-formal-informal.pdf')">Letter Writing (Formal/Informal)</span>
+  <a href="pdfs/english/writing-letter-formal-informal.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/writing-article-report.pdf')">Article/Report Writing</span>
+  <a href="pdfs/english/writing-article-report.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/writing-speech-debate.pdf')">Speech/Debate</span>
+  <a href="pdfs/english/writing-speech-debate.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/english/writing-invitation-reply.pdf')">Invitation/Reply</span>
+  <a href="pdfs/english/writing-invitation-reply.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
+
+ <div class="note-card">
+  <h3>Computer Science</h3>
+  <button class="view-notes-btn" onclick="toggleNotesList(this)">View Notes</button>
+  <div class="notes-list">
+    <h4>Class 12</h4>
+    <ul class="pdf-list">
+      <li>
+  <span onclick="openPDF('pdfs/cs/python-revision-tour.pdf')">Python Revision Tour</span>
+  <a href="pdfs/cs/python-revision-tour.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/working-with-functions.pdf')">Working with Functions</span>
+  <a href="pdfs/cs/working-with-functions.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/file-handling.pdf')">File Handling</span>
+  <a href="pdfs/cs/file-handling.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/data-structures-lists-stacks-queues.pdf')">Data Structures (Lists, Stacks, Queues)</span>
+  <a href="pdfs/cs/data-structures-lists-stacks-queues.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/computer-networks.pdf')">Computer Networks</span>
+  <a href="pdfs/cs/computer-networks.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/network-protocols-internet-basics.pdf')">Network Protocols and Internet Basics</span>
+  <a href="pdfs/cs/network-protocols-internet-basics.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/database-concepts-sql.pdf')">Database Concepts (SQL)</span>
+  <a href="pdfs/cs/database-concepts-sql.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/interface-python-sql.pdf')">Interface Python with SQL</span>
+  <a href="pdfs/cs/interface-python-sql.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/data-visualization.pdf')">Data Visualization</span>
+  <a href="pdfs/cs/data-visualization.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/cyber-safety.pdf')">Cyber Safety</span>
+  <a href="pdfs/cs/cyber-safety.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+<li>
+  <span onclick="openPDF('pdfs/cs/society-law-ethics.pdf')">Society, Law and Ethics</span>
+  <a href="pdfs/cs/society-law-ethics.pdf" download title="Download">
+    <i class="fa fa-download"></i>
+  </a>
+</li>
+    </ul>
+
+     
+  </div>
+</div>
+</section>
+
+
+<section class="handwritten-section" id="handwritten-notes">
+    <h2>Handwritten Notes - Class 12 CBSE 2025</h2>
+    <div class="notes-container">
+
+        <!-- Physics -->
+        <div class="note-card">
+            <h3>Physics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Electric Charges and Fields</a></li>
+                    <li><a href="#">Electrostatic Potential and Capacitance</a></li>
+                    <li><a href="#">Current Electricity</a></li>
+                    <li><a href="#">Moving Charges and Magnetism</a></li>
+                    <li><a href="#">Electromagnetic Induction</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chemistry -->
+        <div class="note-card">
+            <h3>Chemistry</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">The Solid State</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Electrochemistry</a></li>
+                    <li><a href="#">Chemical Kinetics</a></li>
+                    <li><a href="#">Surface Chemistry</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="note-card">
+            <h3>Mathematics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Relations and Functions</a></li>
+                    <li><a href="#">Inverse Trigonometric Functions</a></li>
+                    <li><a href="#">Matrices</a></li>
+                    <li><a href="#">Determinants</a></li>
+                    <li><a href="#">Continuity and Differentiability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biology -->
+        <div class="note-card">
+            <h3>Biology</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Reproduction in Organisms</a></li>
+                    <li><a href="#">Human Reproduction</a></li>
+                    <li><a href="#">Reproductive Health</a></li>
+                    <li><a href="#">Principles of Inheritance</a></li>
+                    <li><a href="#">Molecular Basis of Inheritance</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div class="note-card">
+            <h3>English</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">The Last Lesson</a></li>
+                    <li><a href="#">Lost Spring</a></li>
+                    <li><a href="#">Deep Water</a></li>
+                    <li><a href="#">The Rattrap</a></li>
+                    <li><a href="#">Indigo</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hindi -->
+        <div class="note-card">
+            <h3>Hindi</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">अवतारणिका</a></li>
+                    <li><a href="#">भारत माता</a></li>
+                    <li><a href="#">जामुन का पेड़</a></li>
+                    <li><a href="#">दूध का दाम</a></li>
+                    <li><a href="#">संविधान</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Physical Education -->
+        <div class="note-card">
+            <h3>Physical Education</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Planning in Sports</a></li>
+                    <li><a href="#">Sports and Nutrition</a></li>
+                    <li><a href="#">Yoga and Lifestyle</a></li>
+                    <li><a href="#">Physical Education and Sports for CWSN</a></li>
+                    <li><a href="#">Children and Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="note-card">
+            <h3>Computer Science</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Review of Python Basics</a></li>
+                    <li><a href="#">Functions and File Handling</a></li>
+                    <li><a href="#">Stacks and Queues</a></li>
+                    <li><a href="#">Database Concepts</a></li>
+                    <li><a href="#">SQL Queries</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Important Notes Section -->
+<!-- ====================== -->
+<section class="important-notes-section" id="important-notes">
+    <h2>Important Notes</h2>
+    <div class="notes-container">
+
+        <!-- Physics -->
+        <div class="note-card">
+            <h3>Physics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Electrostatics</a></li>
+                    <li><a href="#">Current Electricity</a></li>
+                    <li><a href="#">Magnetism</a></li>
+                    <li><a href="#">Optics</a></li>
+                    <li><a href="#">Modern Physics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chemistry -->
+        <div class="note-card">
+            <h3>Chemistry</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Electrochemistry</a></li>
+                    <li><a href="#">Chemical Kinetics</a></li>
+                    <li><a href="#">Organic Chemistry</a></li>
+                    <li><a href="#">Biomolecules</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="note-card">
+            <h3>Mathematics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Matrices</a></li>
+                    <li><a href="#">Determinants</a></li>
+                    <li><a href="#">Integrals</a></li>
+                    <li><a href="#">Vector Algebra</a></li>
+                    <li><a href="#">Probability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biology -->
+        <div class="note-card">
+            <h3>Biology</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Molecular Basis of Inheritance</a></li>
+                    <li><a href="#">Evolution</a></li>
+                    <li><a href="#">Biotechnology</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                    <li><a href="#">Reproduction</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div class="note-card">
+            <h3>English</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">The Last Lesson</a></li>
+                    <li><a href="#">Indigo</a></li>
+                    <li><a href="#">Going Places</a></li>
+                    <li><a href="#">On the Face of It</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hindi -->
+        <div class="note-card">
+            <h3>Hindi</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">कबीर के पद</a></li>
+                    <li><a href="#">सूरदास</a></li>
+                    <li><a href="#">तुलसीदास</a></li>
+                    <li><a href="#">निराला</a></li>
+                    <li><a href="#">दिनकर</a></li>
+                    <li><a href="#">महादेवी वर्मा</a></li>
+                    <li><a href="#">प्रेमचंद</a></li>
+                    <li><a href="#">रेणु</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="note-card">
+            <h3>Computer Science</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Python Basics</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">File Handling</a></li>
+                    <li><a href="#">Stacks & Queues</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Networking</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Physical Education -->
+        <div class="note-card">
+            <h3>Physical Education</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Sports & Nutrition</a></li>
+                    <li><a href="#">Yoga & Lifestyle</a></li>
+                    <li><a href="#">Children & Women in Sports</a></li>
+                    <li><a href="#">Test & Measurement in Sports</a></li>
+                    <li><a href="#">Injuries in Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Topper Notes Section -->
+<!-- ====================== -->
+<section class="topper-notes-section" id="topper-notes">
+    <h2>Topper Notes</h2>
+    <div class="notes-container">
+        
+        <!-- Physics -->
+        <div class="note-card">
+            <h3>Physics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Electrostatics</a></li>
+                    <li><a href="#">Current Electricity</a></li>
+                    <li><a href="#">Magnetism</a></li>
+                    <li><a href="#">Electromagnetic Induction</a></li>
+                    <li><a href="#">Optics</a></li>
+                    <li><a href="#">Dual Nature of Matter</a></li>
+                    <li><a href="#">Atoms & Nuclei</a></li>
+                    <li><a href="#">Electronic Devices</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chemistry -->
+        <div class="note-card">
+            <h3>Chemistry</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Electrochemistry</a></li>
+                    <li><a href="#">Chemical Kinetics</a></li>
+                    <li><a href="#">Surface Chemistry</a></li>
+                    <li><a href="#">Coordination Compounds</a></li>
+                    <li><a href="#">Haloalkanes and Haloarenes</a></li>
+                    <li><a href="#">Alcohols, Phenols & Ethers</a></li>
+                    <li><a href="#">Aldehydes, Ketones & Carboxylic Acids</a></li>
+                    <li><a href="#">Amines</a></li>
+                    <li><a href="#">Biomolecules</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="note-card">
+            <h3>Mathematics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Relations and Functions</a></li>
+                    <li><a href="#">Inverse Trigonometric Functions</a></li>
+                    <li><a href="#">Matrices</a></li>
+                    <li><a href="#">Determinants</a></li>
+                    <li><a href="#">Continuity and Differentiability</a></li>
+                    <li><a href="#">Application of Derivatives</a></li>
+                    <li><a href="#">Integrals</a></li>
+                    <li><a href="#">Differential Equations</a></li>
+                    <li><a href="#">Vector Algebra</a></li>
+                    <li><a href="#">Three-dimensional Geometry</a></li>
+                    <li><a href="#">Linear Programming</a></li>
+                    <li><a href="#">Probability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biology -->
+        <div class="note-card">
+            <h3>Biology</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Reproduction in Organisms</a></li>
+                    <li><a href="#">Human Reproduction</a></li>
+                    <li><a href="#">Reproductive Health</a></li>
+                    <li><a href="#">Principles of Inheritance and Variation</a></li>
+                    <li><a href="#">Molecular Basis of Inheritance</a></li>
+                    <li><a href="#">Evolution</a></li>
+                    <li><a href="#">Human Health and Disease</a></li>
+                    <li><a href="#">Microbes in Human Welfare</a></li>
+                    <li><a href="#">Biotechnology</a></li>
+                    <li><a href="#">Ecosystem</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="note-card">
+            <h3>Computer Science</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Python Revision Tour</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">File Handling</a></li>
+                    <li><a href="#">Data Structures</a></li>
+                    <li><a href="#">Database Concepts</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Computer Networks</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Physical Education -->
+        <div class="note-card">
+            <h3>Physical Education</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Planning in Sports</a></li>
+                    <li><a href="#">Sports & Nutrition</a></li>
+                    <li><a href="#">Yoga & Lifestyle</a></li>
+                    <li><a href="#">Physical Education & Sports for CWSN</a></li>
+                    <li><a href="#">Children & Women in Sports</a></li>
+                    <li><a href="#">Test & Measurement in Sports</a></li>
+                    <li><a href="#">Physiology & Injuries in Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div class="note-card">
+            <h3>English</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">The Last Lesson</a></li>
+                    <li><a href="#">Lost Spring</a></li>
+                    <li><a href="#">Deep Water</a></li>
+                    <li><a href="#">The Rattrap</a></li>
+                    <li><a href="#">Indigo</a></li>
+                    <li><a href="#">Poets and Pancakes</a></li>
+                    <li><a href="#">On the Face of It</a></li>
+                    <li><a href="#">The Interview</a></li>
+                    <li><a href="#">Going Places</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hindi -->
+        <div class="note-card">
+            <h3>Hindi</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View Chapters</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">अंतरा: कबीर के पद</a></li>
+                    <li><a href="#">सूरदास</a></li>
+                    <li><a href="#">तुलसीदास</a></li>
+                    <li><a href="#">निराला</a></li>
+                    <li><a href="#">दिनकर</a></li>
+                    <li><a href="#">महादेवी वर्मा</a></li>
+                    <li><a href="#">मुनशी प्रेमचंद</a></li>
+                    <li><a href="#">रेणु</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="pyqs-section" id="pyqs">
+    <h2>Previous Year Questions (PYQs)</h2>
+    <div class="notes-container">
+        <!-- Physics -->
+        <div class="note-card">
+            <h3>Physics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 11 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2021</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chemistry -->
+        <div class="note-card">
+            <h3>Chemistry</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 11 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2021</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="note-card">
+            <h3>Mathematics</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 11 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2021</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biology -->
+        <div class="note-card">
+            <h3>Biology</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 11 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                    <li><a href="#">Class 12 - 2021</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Physical Education -->
+        <div class="note-card">
+            <h3>Physical Education</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hindi -->
+        <div class="note-card">
+            <h3>Hindi</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div class="note-card">
+            <h3>English</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="note-card">
+            <h3>Computer Science</h3>
+            <button class="view-notes-btn" onclick="toggleNotesList(this)">View PYQs</button>
+            <div class="notes-list">
+                <ul>
+                    <li><a href="#">Class 11 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2023</a></li>
+                    <li><a href="#">Class 12 - 2022</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="features-section" id="features">
+  <h2>Key Features</h2>
+  <div class="features-container">
+    
+    <div class="feature-card">
+      <h3>Personalized Learning Paths</h3>
+      <p>Customized study plans based on your strengths and weaknesses.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Progress Tracker</h3>
+      <p>Monitor your performance and improve with every step.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Gamified Learning</h3>
+      <p>Earn rewards, badges, and stay motivated while studying.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Flashcards & Mnemonics</h3>
+      <p>Memorize key concepts easily with interactive flashcards.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Doubt Solving</h3>
+      <p>Ask questions and get instant solutions from mentors and peers.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Notes Sharing</h3>
+      <p>Share or download verified notes by toppers and teachers.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ 
+
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest resources and tips!</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+ 
+<!-- Fullscreen Modal -->
+<div id="pdfModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closePDF()">✖</span>
+    <a id="downloadLink" class="download-btn" href="#" download target="_blank" title="Download">
+      <i class="fa fa-download"></i>
+    </a>
+    <iframe id="pdfFrame" frameborder="0"></iframe>
+  </div>
+</div>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+ 
+
+
+
+
+
+  <footer class="footer">
+      <p>&copy; 2025 Learn X. All rights reserved.</p>
+      <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
