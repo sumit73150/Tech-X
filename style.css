@@ -336,6 +336,22 @@ html {
     color: #671ae4;
 }
 
+
+/* Class Section Base */
+.class-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
 /* ====================== */
 /* Notes Section */
 /* ====================== */
