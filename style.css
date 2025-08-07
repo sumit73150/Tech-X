@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
 }
 
 body {
@@ -15,6 +15,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 
 /* ====================== */
 /* Navbar Styles */
@@ -346,11 +347,28 @@ html {
 /* Section Title */
 .section-title {
   text-align: center;
-  font-size: 34px;
+  font-size: 45px;
   font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 40px;
+  color: #0d0d0e;
+   padding: 40px 20px;
+  background-color: #99dcce;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
 }
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 5px;
+  background-color: #dd0517;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
 
 /* ====================== */
 /* Notes Section */
@@ -362,8 +380,8 @@ html {
 }
 
 .notes-section h2 {
-    font-size: 2rem;
-    color: #03045e;
+    font-size: 2.5rem;
+    color: #0a0a0a;
     margin-bottom: 30px;
 }
 
@@ -411,16 +429,102 @@ html {
 /* Sample Paper Section */
 /* ====================== */
 .sample-paper-section {
-    padding: 50px 20px;
-    background-color: #e6f4f1;
-    text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: #f0f9ff; /* Light blueish background */
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, modern shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.sample-paper-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .sample-paper-section h2 {
-    font-size: 2rem;
-    color: #03045e;
-    margin-bottom: 30px;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e3a8a; /* Modern dark blue */
+  margin-bottom: 1.5rem;
 }
+
+/* Container grid layout */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Individual note/experiment card */
+.note-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Card heading */
+.note-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+/* View button */
+.view-notes-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.75rem;
+}
+
+.view-notes-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Notes list */
+.notes-list {
+  display: none;
+  text-align: left;
+  margin-top: 0.75rem;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  margin-bottom: 0.5rem;
+}
+
+.notes-list a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.notes-list a:hover {
+  color: #dc2626;
+}
+
 
 /* ====================== */
 /* PYQs Section */
@@ -535,13 +639,13 @@ html {
 /* ====================== */
 .important-notes-section {
     padding: 50px 20px;
-    background-color: #e6f4f1; /* Light teal/blueish tone, you can change it */
+    background-color: #e6f4f1; 
     text-align: center;
 }
 
 .important-notes-section h2 {
     font-size: 2rem;
-    color: #00796b; /* Teal color, change it to #d35400 if you want the same as Topper Notes */
+    color: #00796b;  
     margin-bottom: 30px;
 }
 
@@ -1101,3 +1205,6 @@ html {
     }
     
  
+
+
+

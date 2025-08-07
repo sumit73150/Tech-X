@@ -1,0 +1,74 @@
+/* Container grid layout */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Individual note/experiment card */
+.note-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Card heading */
+.note-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+/* View button */
+.view-notes-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.75rem;
+}
+
+.view-notes-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Notes list */
+.notes-list {
+  display: none;
+  text-align: left;
+  margin-top: 0.75rem;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  margin-bottom: 0.5rem;
+}
+
+.notes-list a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.notes-list a:hover {
+  color: #dc2626;
+}

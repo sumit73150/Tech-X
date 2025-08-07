@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar">
+ <nav class="navbar">
   <div class="logo">
     <h1>Learn X</h1>
   </div>
 
-    <!-- Class Dropdown -->
+ 
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="nav-links">
+
+     <!-- Class Dropdown -->
   <li class="dropdown">
     <a href="#">Class <i class="fas fa-caret-down"></i></a>
     <ul class="dropdown-menu">
@@ -22,21 +27,19 @@
       <li><a href="class11.html">Class 11</a></li>
       <li><a href="#class12">Class 12</a></li>
     </ul>
-  </li>
+    </li>
 
-  <ul class="nav-links">
+    <!-- Notes Dropdown -->
     <li class="dropdown">
-    <a href="#all-notes">Notes <i class="fas fa-caret-down"></i></a>
-    <ul class="dropdown-menu">
+      <a href="#all-notes" class="dropdown-toggle">Notes <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-menu">
         <li><a href="#handwritten-notes">Handwritten Notes</a></li>
         <li><a href="#topper-notes">Topper Notes</a></li>
         <li><a href="#chapterwise-notes">Chapter-wise Notes</a></li>
         <li><a href="#important-notes">Important Notes</a></li>
-    </ul>
-</li>
+      </ul>
+    </li>
 
-
- 
     <li><a href="#pyqs">PYQs</a></li>
     <li><a href="sample-papers.html">Sample Papers</a></li>
     <li><a href="sample-papers.html">Experiments</a></li>
@@ -44,12 +47,13 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
-<div class="search">
-  <input type="text" id="searchInput" placeholder="Search...">
-  <button type="button" onclick="searchContent()">Search</button>
-</div>
-
+  <!-- Search Box -->
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button type="button" onclick="searchContent()">Search</button>
+  </div>
 </nav>
+
 
  
 
@@ -87,7 +91,7 @@
 
   
 <section class="notes-section" id="all-notes">
-    <h2>All Notes</h2>
+    <h2>Class 12 Notes</h2>
     <div class="notes-container">
   <div class="note-card">
   <h3>Physics</h3>

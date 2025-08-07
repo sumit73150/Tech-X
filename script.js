@@ -151,7 +151,10 @@ function closePDF() {
 }
 
 
+ function toggleNotesList(button) {
+  const notesList = button.nextElementSibling;
+  notesList.style.display = notesList.style.display === "block" ? "none" : "block";
+}
 
-// dropdown
 
  
